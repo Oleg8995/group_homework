@@ -1,0 +1,38 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.block_wrap {
+    position: relative;
+    width: 600px;
+    height: 600px;
+
+}
+
+@keyframes animate {
+    0% { left: 0px; background-color: blue;}
+    25% { left: 500px; bottom: 0; background-color: green;}
+    50% { bottom: 500px; left: 500px; background-color: yellow;}
+    75% { bottom: 500px; left: 0px; background-color: red;}
+    100% { left: 0px; background-color: blue;}
+}
+
+.block {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+
+    background-color: blue;
+
+    animation: animate 4s ease-in-out 1s infinite ;
+
+}
+
